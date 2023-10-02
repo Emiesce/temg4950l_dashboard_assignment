@@ -10,4 +10,4 @@ CSV Files were initially converted into JSON files with a Python script.
 
 This assignment is another simple React application. If you download it, simply input "npm start" into the terminal to compile and run the application. 
 
-The Deployed App can be located in the following GitHub Pages Link: 
+The Deployed App can be located in the following GitHub Pages Link: https://emiesce.github.io/temg4950l_dashboard_assignment
