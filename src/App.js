@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Pricing from './pages/Pricing';
+import Portfolio from './pages/Portfolio';
+import { Route, Routes} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Navbar from './Navbar';
+
+const App = () => {
+    // Routes allows the code to be scalable, by allowing different pages by specifying their path
+    return (
+        <>
+            <Navbar/>
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<Pricing/>}/>
+                    <Route path="pricing" element={<Pricing/>}/>
+                    <Route path="portfolio" element={<Portfolio/>}/>
+                </Routes>
+            </div>
+        </>
+    );
+};
 
 export default App;
